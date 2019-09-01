@@ -1,0 +1,10 @@
+#code
+n=int(input())
+for i in range(n):
+    l1len=int(input())
+    l1=list(map(int,input().split(" ")))
+    l2len=int(input())
+    l2=list(map(int,input().split(" ")))
+    maxm=max(l1)
+    minm=min(l2)
+    print(maxm*minm)
