@@ -1,0 +1,11 @@
+#code
+t=int(input())
+for i in range(t):
+    n,l,u=map(int,input().split(" "))
+    ar=list(map(int,input().split(" ")))
+    for i in range(n):
+        el=ar[i]
+    if el<l and el>u:
+        print("NO")
+    else:
+        print("YES")
