@@ -1,0 +1,15 @@
+#code
+t=int(input())
+for i in range(t):
+    n,d=map(int,input().split(" "))
+    car_no=list(map(int,input().split(" ")))
+    penalty=list(map(int,input().split(" ")))
+    fine=0
+    for i in range(n):
+        if d%2==0:
+            if car_no[i]%2!=0:
+                fine=fine+penalty[i]
+        else:
+            if car_no[i]%2==0:
+                fine=fine+penalty[i]
+    print(fine)
