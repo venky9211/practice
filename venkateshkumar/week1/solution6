@@ -1,0 +1,19 @@
+#code
+def convstr(string):
+    newstr=""
+    for i in string:
+        if i.isalnum():
+            newstr+i
+    return newstr
+            
+t=int(input())
+for i in range(t):
+    s=input()
+    ourstr=convstr(s)
+    revstr=ourstr[ : :-1]
+    if ourstr==revstr:
+        print("YES")
+    else:
+        print("NO")
+    
+    
