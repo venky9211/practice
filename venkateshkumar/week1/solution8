@@ -1,0 +1,26 @@
+#code
+def greatfac(x,y):
+    while x%y==0:
+        x=x/y
+    return x
+def check(number):
+    number=greatfac(number,2)
+    number=greatfac(number,3)
+    number=greatfac(number,5)
+    if number==1:
+        return 1
+    else:
+        return 0
+def findugly(n):
+    i=1
+    count=1
+    while n>count:
+        i+=1
+        if check(i):
+            count+=1
+    return i
+t=int(input())
+for j in range(t):
+    ugpos=int(input())
+    print(findugly(ugpos))
+        
